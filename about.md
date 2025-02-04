@@ -1,4 +1,7 @@
-# About
+---
+layout: page
+title: About
+---
 
 I’m an engineer at heart-always thinking, always questioning.
 
