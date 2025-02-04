@@ -14,8 +14,8 @@ feed_show_tags: true
 # Add a search button to the navbar
 post_search: true
 
-lsi: false
-safe: true
+# lsi: false
+safe: false
 # source: blog/
 incremental: false
 highlighter: rouge
