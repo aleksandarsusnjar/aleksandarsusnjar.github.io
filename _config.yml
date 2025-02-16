@@ -1,10 +1,17 @@
 # url: https://blog.susnjar.net
 # theme: jekyll-theme-cayman
+theme: jekyll-theme-minima
 title: Cogitatorium
 author: Aleksandar Susnjar
 url-pretty: blog.susnjar.net
 title-on-all-pages: true
 
+
+titles_from_headings:
+  enabled: true
+  strip_title: true
+  collections: true
+  
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
 
@@ -32,3 +39,4 @@ paginate: 12
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-titles-from-headings
