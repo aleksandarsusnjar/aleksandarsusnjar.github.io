@@ -11,7 +11,7 @@ tags:
     - "Software Architecture"
 categories:
     ask-yourself
-permalink: /blog/rest-carving
+permalink: /blog/rest-tug-of-war
 ---
 
 ![Map](/assets/rest-tug-of-war/tug-of-war.png){: style="float: right; width: 50%; margin-left: 1em;"}
@@ -194,9 +194,9 @@ Do you have to update all resources (types) to new versions whenever any one of 
 
 2. **No**: Consider the client following the indicated links to related resources. Should the representations of these links include version information?
 
-  - **No**: The client must be able to build the entire URL, including the desired version, knowing that not all versions exist across all resources and may not match.
+    - **No**: The client must be able to build the entire URL, including the desired version, knowing that not all versions exist across all resources and may not match.
 
-  - **Yes**: How do you know which versions the client supports? Suppose the client follows that link. It’s now looking to follow the reverse link. How do you ensure it returns to where it came from and not to the “latest version available before the source version”? In other words, how do you ensure a compatible roundtrip? Bonus question: The client stores those IDs in its own database. After several API version upgrades, the client looks up the ID and tries to get the resource. By this time, it may not just use a newer version, but require it. What does it do?
+    - **Yes**: How do you know which versions the client supports? Suppose the client follows that link. It’s now looking to follow the reverse link. How do you ensure it returns to where it came from and not to the “latest version available before the source version”? In other words, how do you ensure a compatible roundtrip? Bonus question: The client stores those IDs in its own database. After several API version upgrades, the client looks up the ID and tries to get the resource. By this time, it may not just use a newer version, but require it. What does it do?
 
 Let’s add another challenge: Do links include full URLs with hostnames? This sounds convenient, as clients don’t need to build those URLs themselves and can store and reference them later. It also leverages existing DNS and gateway infrastructure to support distributed services seamlessly. But does it?
 
