@@ -195,17 +195,21 @@ OK, now we’re moving away from resource = thing. An action is now a resource. 
 - But what about modifying existing/past moves? No?
 
 **Tracking Game State**
+
+
 How do clients determine the positions of all pieces?
 Do they need to replay all the moves, or will there be special resources to help?
 If so, would these be read-only?
 What are the caching implications?
 
 **Consistency & REST Constraints**
+
 Once again, what do we do about *Fielding 5.2.2*: *...each request contains all of the information necessary for a connector to understand the request, independent of any requests that may have preceded it*?
 
 Does our approach violate this principle? If so, how do we justify or mitigate that?
 
 **The Role of HTTP Methods**
+
 Do you expect to stick with HTTP verbs (GET, POST, etc.) as the **only** action identifiers?
 
 If so, does this approach feel like cheating or breaking that expectation?
