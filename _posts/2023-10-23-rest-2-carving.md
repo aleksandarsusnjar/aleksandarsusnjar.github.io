@@ -114,7 +114,7 @@ This raises bigger questions about the division of power and responsibility. Doe
 
 Let’s separate the board, along with the pieces, into its own "board monolith" resource. Since clients can only manipulate one resource at a time, this eliminates the complexity of dealing with combined changes to both the board state and the broader game state. Even if you allow overlapping or composite resources (*Fielding 5.2.1.2*), each resource still needs to be managed independently, meaning you'd have to define the details of how they are transferred.
 
-## What did we achieve? What new challenges arise?
+**What did we achieve? What new challenges arise?**
 
 How many types of resources do clients now need to work with? I’d say one more than in option 1 since we’ve now split the board from the game. The game resource may still be needed for tracking variants, history, remaining time, and draw negotiations, while the board resource is required to see piece positions and execute moves.
 
@@ -125,11 +125,11 @@ How do we represent the relationship between the board and the game? Is it 1:1, 
 - If boards are chained chronologically, does each board require a unique ID (and URL)?
 - How does modifying an existing board versus creating a new one impact caching? How useful is caching in either case?
 
-## Validation and Security
+**Validation and Security**
 
 The client can still submit an illegally modified board state to the server, meaning the server has to reverse-engineer the moves from its last known state to validate them. Does this process become any easier, now that the game state is implied rather than explicitly included? Even in chess, where moves are relatively easy to verify, this can get tricky. Now, imagine designing for a service where  validation isn't as straightforward.
 
-## Statelessness & REST Constraints
+**Statelessness & REST Constraints**
 
 What does this mean for the statelessness of the API? Consider Fielding’s note in *5.2.2*:
 
@@ -141,7 +141,7 @@ Or *5.1.6*:
 
 Are we still adhering to these constraints, or have we introduced hidden state dependencies?
 
-## Handling Concurrent Moves
+**Handling Concurrent Moves**
 
 In multiplayer games, multiple players may attempt to make moves for the same turn and board state, even if it isn't their turn to do so. How do we recognize and resolve such conflicts?
 
@@ -194,18 +194,18 @@ OK, now we’re moving away from resource = thing. An action is now a resource. 
 - We can also create multi-piece / transactional moves.
 - But what about modifying existing/past moves? No?
 
-## Tracking Game State
+**Tracking Game State**
 How do clients determine the positions of all pieces?
 Do they need to replay all the moves, or will there be special resources to help?
 If so, would these be read-only?
 What are the caching implications?
 
-## Consistency & REST Constraints
+**Consistency & REST Constraints**
 Once again, what do we do about *Fielding 5.2.2*: *...each request contains all of the information necessary for a connector to understand the request, independent of any requests that may have preceded it*?
 
 Does our approach violate this principle? If so, how do we justify or mitigate that?
 
-## The Role of HTTP Methods
+**The Role of HTTP Methods**
 Do you expect to stick with HTTP verbs (GET, POST, etc.) as the **only** action identifiers?
 
 If so, does this approach feel like cheating or breaking that expectation?
@@ -246,3 +246,8 @@ What about you? Do you know of a non-trivial, well-designed REST API in producti
 Or maybe you fall into a different group, one that has never built, used, or even seen a proper REST API, despite working with systems that carry those letters in their name. Does that sound familiar?
 
 See you in the next post!
+
+
+# Next...
+
+Continue to [part 3](rest-tug-of-war) to think about the tug of war fought by the opposing requirements.
