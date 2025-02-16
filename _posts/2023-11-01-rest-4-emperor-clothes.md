@@ -23,7 +23,7 @@ Why does this matter? Because there seem to be at least three different interpre
 
 - **"Original"**: The "Representational State Transfer" architectural style, as defined by Roy Fielding's PhD dissertation in 2000. It leaves many details up to the API designer and focuses on high-level goals and constraints. It doesn't necessarily involve HTTP, JSON, or any specific technology.
 
-- **"Evolved""**: A stricter, opinionated extension of the above, applying lessons learned since Fielding's work. It focuses specifically on HTTP, JSON, HATEOAS, and the mapping of verbs and nouns. It emphasizes that effects should only be triggered by clients submitting self-sufficient intended states to the server that do not depend on previous requests - no RPC or action endpoints allowed.
+- **"Evolved"**: A stricter, opinionated extension of the above, applying lessons learned since Fielding's work. It focuses specifically on HTTP, JSON, HATEOAS, and the mapping of verbs and nouns. It emphasizes that effects should only be triggered by clients submitting self-sufficient intended states to the server that do not depend on previous requests - no RPC or action endpoints allowed.
 
 - **"Pragmatic"**: A catch-all term for mapping action requests to HTTP requests (endpoints), where inputs/arguments are passed via HTTP headers, query string arguments, and request bodies, and results are returned in HTTP response bodies. If you can describe it using an OpenAPI specification, it's considered a "REST API."
 
@@ -82,11 +82,11 @@ Your API is live. Now come the performance complaints and feature requests, new 
 
 - Optimize the implementation of existing endpoints without changing inputs or outputs.
 
-- Leverage caching—but only if you can achieve a good cache hit rate on authorized or public content. Both clients and servers will need updates to manage the risk of stale data. And it’s not just about displaying outdated information; it’s also about the workflows that follow.
+- Leverage caching - but only if you can achieve a good cache hit rate on authorized or public content. Both clients and servers will need updates to manage the risk of stale data. And it’s not just about displaying outdated information; it’s also about the workflows that follow.
 
 **Performance & Functionality**
 
-- Enhance existing endpoints so clients can be more specific about what they need. This, however, negatively impacts caching and requires client-side code changes. Modifying request parameters or response structures introduces breaking changes—missing expected data or unexpected new data could cause failures.
+- Enhance existing endpoints so clients can be more specific about what they need. This, however, negatively impacts caching and requires client-side code changes. Modifying request parameters or response structures introduces breaking changes - missing expected data or unexpected new data could cause failures.
 
 - Tackle N+1 and other complex issues by designing and implementing new endpoints that overlap with existing ones. While this can help, it also makes the API less canonical, further complicates caching, and requires client-side updates.
 
