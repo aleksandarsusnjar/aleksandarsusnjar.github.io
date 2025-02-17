@@ -10,7 +10,8 @@ tags:
 categories:
     ask-yourself
 permalink: /blog/graphql-not
-excerpt: "Tired of hearing the same old buzzwords about GraphQL? It's time for a reality check. In this post, I'll challenge what you think you know about it—GraphQL isn't a "graph query language," nor is it a database query tool, despite the name. Instead, it's a framework to help you design your own APIs. By busting myths and tackling misconceptions, even those held by seasoned developers, I'll strip away the hype and reveal what GraphQL really is. With a clear mind and a fresh perspective, you'll see how GraphQL can offer practical solutions to your existing problems without being as odd or intimidating as it's often made out to be."
+excerpt: >
+    Tired of hearing the same old buzzwords about GraphQL? It's time for a reality check. In this post, I'll challenge what you think you know about it—GraphQL isn't a "graph query language", nor is it a database query tool, despite the name. Instead, it's a framework to help you design your own APIs. By busting myths and tackling misconceptions, even those held by seasoned developers, I'll strip away the hype and reveal what GraphQL really is. With a clear mind and a fresh perspective, you'll see how GraphQL can offer practical solutions to your existing problems without being as odd or intimidating as it's often made out to be.
 ---
 
 Maybe you've heard of this thing called "GraphQL". Would you have any use right now for "GQL", a sort of "SQL" for graph databases? No? Well, if you did, GraphQL wouldn't be what you're looking fo - it's not that. Yet, the name "GraphQL" tends to create strong first impressions, and they couldn't be more wrong. I made the same mistake.

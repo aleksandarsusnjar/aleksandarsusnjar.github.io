@@ -12,7 +12,8 @@ tags:
 categories:
     ask-yourself
 permalink: /blog/rest-tug-of-war
-excerpt: "REST API design isn't as straightforward as it may seem—there's a complex tug of war between competing factors like client needs, performance, security, and maintainability. While many treat REST as a simple, one-size-fits-all solution, the reality is far messier. From managing resource states and ensuring performance to addressing failure and evolving with clients, every design decision pulls in different directions. I explore alternative approaches, such as dynamically adjusting resources or reimagining them for specific clients, and challenge the conventional wisdom by questioning the assumptions others often settle for. By diving deep into these complexities, I urge you to think critically about the real-world challenges of API design and the profound impact your choices have on the system's functionality and longevity."
+excerpt: >
+    REST API design isn't as straightforward as it may seem—there's a complex tug of war between competing factors like client needs, performance, security, and maintainability. While many treat REST as a simple, one-size-fits-all solution, the reality is far messier. From managing resource states and ensuring performance to addressing failure and evolving with clients, every design decision pulls in different directions. I explore alternative approaches, such as dynamically adjusting resources or reimagining them for specific clients, and challenge the conventional wisdom by questioning the assumptions others often settle for. By diving deep into these complexities, I urge you to think critically about the real-world challenges of API design and the profound impact your choices have on the system's functionality and longevity.
 ---
 
 ![Map](/assets/rest-tug-of-war/tug-of-war.png){: style="float: right; width: 50%; margin-left: 1em;"}
