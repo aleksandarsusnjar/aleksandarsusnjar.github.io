@@ -18,8 +18,11 @@ Maybe you've heard of this thing called "GraphQL". Would you have any use right 
 
 I'll write a separate post on what GraphQL is, but before we get there, it's important to clear up misconceptions - what it isn't. Believe it or not, even experienced GraphQL practitioners have misunderstandings that hold them back. So, even if you're sure that you know what GraphQL really is, I'd still appreciate you reading this. Maybe you'll discover something new - or maybe you'll teach me something.
 
-Each section addresses a misconception I either held myself or have frequently encountered. Let's dive in.
+Each section addresses a misconception I either held myself or have frequently encountered:
 
+{:toc}
+
+Let's dive in through.
 
 # Graph? What Graph?
 
