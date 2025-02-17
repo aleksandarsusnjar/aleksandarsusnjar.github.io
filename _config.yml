@@ -14,6 +14,7 @@ title-on-all-pages: true
   
 # Whether or not to show an excerpt for every blog post in the feed page
 feed_show_excerpt: true
+show_excerpts: true
 
 # Whether or not to show a list of tags below each post preview in the feed page
 feed_show_tags: true
