@@ -13,7 +13,7 @@ categories:
     ask-yourself
 permalink: /blog/rest-carving
 excerpt: >
-  In this post, I unravel the challenges of designing REST APIs, focusing on the often-overlooked complexities of carving state into meaningful resources. While REST may sound straightforward, the reality is full of trade-offs, missteps, and hidden intricacies that many designs fail to address. This isn't about blindly adhering to REST principles—it's about questioning assumptions, rejecting superficial solutions, and tackling the hard questions: Where do you draw the line between simplicity and overengineering? This post is your wake-up call to rethink what REST truly demands vs what it gives back.
+  In this post, I unravel the challenges of designing REST APIs, focusing on the often-overlooked complexities of carving state into meaningful resources. While REST may sound straightforward, the reality is full of trade-offs, missteps, and hidden intricacies that many designs fail to address. This isn't about blindly adhering to REST principles - it's about questioning assumptions, rejecting superficial solutions, and tackling the hard questions: Where do you draw the line between simplicity and overengineering? This post is your wake-up call to rethink what REST truly demands vs what it gives back.
 ---
 
 Say you're designing an API and want it to follow the principles of REST. You'll need to make many decisions, which means asking yourself a lot of questions. I'll list many of those here in the hope that they help you avoid blind spots.

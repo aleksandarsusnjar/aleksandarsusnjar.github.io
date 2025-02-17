@@ -13,7 +13,7 @@ categories:
     ask-yourself
 permalink: /blog/rest-emperor-clothes
 excerpt: >
-    REST is still hailed by many as the ultimate goal for API design, yet the reality is far more complex. I challenge conventional thinking by exposing the struggles involved in designing, implementing, evolving, and maintaining REST APIs. From the varying interpretations—ranging from purist to pragmatic—to the complexities of balancing competing needs and managing resource states, blindly adhering to RESTful practices almost always leads to inefficiencies and wasted resources. It's time to critically examine whether REST is truly the best path, or if it's just another set of invisible "clothes" that not only mask, but also create, the real challenges in API design. If you're not questioning REST's place in your system, you're missing the bigger picture.
+    REST is still hailed by many as the ultimate goal for API design, yet the reality is far more complex. I challenge conventional thinking by exposing the struggles involved in designing, implementing, evolving, and maintaining REST APIs. From the varying interpretations - ranging from purist to pragmatic - to the complexities of balancing competing needs and managing resource states, blindly adhering to RESTful practices almost always leads to inefficiencies and wasted resources. It's time to critically examine whether REST is truly the best path, or if it's just another set of invisible "clothes" that not only mask, but also create, the real challenges in API design. If you're not questioning REST's place in your system, you're missing the bigger picture.
 ---
 
 Let's talk about ***your*** motivation for choosing the REST route. How much thought have you given to this decision? Have you considered how the approach benefits you and whether its limitations and constraints align with your needs without hindering them? What alternatives did you explore? Or did you simply follow what seemed to be the common practice or the only option available? Can you justify your decisions based on positive outcomes in your specific case, without relying on the opinions of others, including mine?
@@ -27,7 +27,7 @@ Why does this matter? Because there seem to be at least three different interpre
 
 - **"Evolved"**: A stricter, opinionated extension of the above, applying lessons learned since Fielding's work. It focuses specifically on HTTP, JSON, HATEOAS, and the mapping of verbs and nouns. It emphasizes that effects should only be triggered by clients submitting self-sufficient intended states to the server that do not depend on previous requests - no RPC or action endpoints allowed.
 
-- **"Pragmatic"**: A catch-all term for mapping action requests to HTTP requests (endpoints), where inputs/arguments are passed via HTTP headers, query string arguments, and request bodies, and results are returned in HTTP response bodies. If you can describe it using an OpenAPI specification, it's considered a "REST API."
+- **"Pragmatic"**: A catch-all term for mapping action requests to HTTP requests (endpoints), where inputs/arguments are passed via HTTP headers, query string arguments, and request bodies, and results are returned in HTTP response bodies. If you can describe it using an OpenAPI specification, it's considered a "REST API".
 
 While not exhaustive, the list above highlights a range of understandings of REST in the wild. It starts to resemble the story of "The Emperor's New Clothes" - everyone pretends to see something that isn't really there. I challenge you to dig a little deeper and investigate some "REST" APIs to see where they truly fit, no matter what they claim. Here are my observations:
 
@@ -37,7 +37,7 @@ While not exhaustive, the list above highlights a range of understandings of RES
 
 - Many people dismiss the original and evolved "camps" and embrace the pragmatic/business approach from the start. This aligns with my observation that I've yet to encounter a "REST" API that doesn't violate one or more of the other definitions in some way.
 
-- There are "purists" from the "original" and "evolved" camps who are frustrated by this situation. This is evident in countless articles, testimonies, and job interview questions aimed at determining whether candidates "truly know what REST is." Roy Fielding himself has published what could be seen as an outcry against the misappropriation of the term "REST."
+- There are "purists" from the "original" and "evolved" camps who are frustrated by this situation. This is evident in countless articles, testimonies, and job interview questions aimed at determining whether candidates "truly know what REST is". Roy Fielding himself has published what could be seen as an outcry against the misappropriation of the term "REST".
 
 If you're curious, I've covered this topic in more depth in an [earlier post - part 1](rest-what). What's important here is recognizing that there's a division and confusion surrounding this issue, and it will come into play soon.
 
@@ -46,7 +46,7 @@ If you're curious, I've covered this topic in more depth in an [earlier post - p
 
 Suppose your team doesn't have the necessary skills to design a REST API. What can you do about it? If you decide to hire people who already have the skills, how would you go about this, and what outcome should you expect, given the division and confusion mentioned earlier? How many candidates would meet your desired level of understanding, and how much would you need to retrain them? What new skills would they bring to the table in that case?
 
-Let's dive deeper. Beyond knowing concepts that are adjacent to REST but not quite REST - such as HTTP, libraries and frameworks, Open API specifications, and the like - what else should your team learn to create effective REST APIs? If you're on the extreme pragmatic end, the answer might be "very little, perhaps nothing." This approach could make it easier to find the right workforce, but your API would likely resemble others only in the most basic ways. Newcomers would need to learn the specifics of your API, and that expertise wouldn't be transferable to other projects.
+Let's dive deeper. Beyond knowing concepts that are adjacent to REST but not quite REST - such as HTTP, libraries and frameworks, Open API specifications, and the like - what else should your team learn to create effective REST APIs? If you're on the extreme pragmatic end, the answer might be "very little, perhaps nothing". This approach could make it easier to find the right workforce, but your API would likely resemble others only in the most basic ways. Newcomers would need to learn the specifics of your API, and that expertise wouldn't be transferable to other projects.
 
 On the other hand, if you're in the less pragmatic camp and care about applying the style "correctly" (whatever that means to you), you'll be looking for more. Your team will need to develop the ability to [break down resources effectively](rest-carving) and [tackle opposing forces](rest-tug-of-war). If you haven't already, check out those posts - understanding these challenges will be crucial as we move forward. The people you want on your team will need to be familiar with these concepts and able to reason through them. As we continue, think about how much existing experience solving these challenges is transferable to other projects. How long would it take to hire someone with the matching skillset, or to train them to think the way you do?
 
@@ -57,7 +57,7 @@ You now have your star team. They know everything they need to about the mechani
 
 How long will it take to complete a clean yet workable design? I'm not just talking about the initial sparks of inspiration, nor limiting this to the pre-implementation phase. All follow-up design adjustments should be included as well.
 
-The answer depends on how strictly you adhere to your definition of REST. Those in the pragmatic camp will spend very little time, as they aren't following specific constraints and can simply add whatever they need, as they need it. Those in the other two camps will argue that this approach will cause problems later and will invest significant time in thoughtful design. But how long does that take? Honestly, I don't know. I have no evidence that anyone has ever done it 100% cleanly, so there's no one I could ask for better stats beyond my own experiences. Another way to put it: "longer than the time available."
+The answer depends on how strictly you adhere to your definition of REST. Those in the pragmatic camp will spend very little time, as they aren't following specific constraints and can simply add whatever they need, as they need it. Those in the other two camps will argue that this approach will cause problems later and will invest significant time in thoughtful design. But how long does that take? Honestly, I don't know. I have no evidence that anyone has ever done it 100% cleanly, so there's no one I could ask for better stats beyond my own experiences. Another way to put it: "longer than the time available".
 
 At some point, every project resorts to some form of compromise, often by tunneling RPC. Has your experience been different? And if so, are you prepared to defend your design under the scrutiny of REST purists?
 
@@ -119,3 +119,7 @@ By definition, this isn't possible under the purist view of REST. It also goes b
 That hasn't stopped people from trying. Many have done it, but their solutions remained proprietary and, as a result, never gained widespread adoption. Some have shared their approaches while continuing to call them "REST", with varying levels of success and complexity, such as OData and TreeQL (and possibly others). Others have abandoned REST altogether in favor of something like GraphQL.
 
 Have you explored these alternatives? Are you sure you understand them? My experience suggests that misconceptions abound - some believe REST clients can't easily access these approaches, while others think they're inherently risky. If you design APIs, you owe it to yourself to see how these compare. Otherwise, can you confidently name a single benefit of REST that applies to your needs - and defend it?
+
+# Next...
+
+Now that we've contemplated what REST APIs are and/or are not, head to [GraphQL: What it is not!](graphql-not) to do the same for GraphQL. You owe it to yourself to have at least one more perspective.
