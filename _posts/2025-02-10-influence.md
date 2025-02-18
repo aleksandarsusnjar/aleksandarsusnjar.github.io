@@ -86,7 +86,9 @@ Below is a hypothetical example of what an engineer, a beginner architect and ma
 
 What I didn't mention yet is that to acquire a specific new skill, one must have its prerequisite skills – you can't just jump into a subject matter area and learn it well. Interestingly, while those prerequisites are needed to acquire new skills, their importance fades as we advance our attention further. We must travel roads to get from A to B, but we don't care about the roads we're done with. Firm foundations are beneficial, so it's useful to think of these "roads" as being made entirely of bridges. Destroying one end of a bridge can very well destroy it all, so we have to keep them in good condition until we're completely done with them.
 
-Influence
+
+# Influence
+
 Each of the two dimensions of expertise implies its own kind of potential influence, one over technology and the other over organizing people. To make that influence real and effective it is not sufficient, however, to only have skills in one of those dimensions – both are required. Again, an architect can't be good without understanding people organization and processes and managers can't be good if they don't understand the realities of engineering. Bringing them together and applying constraints we can observe that the direct influence must remain more or less constant and indirect influence grows the more higher-level expertise we have on either technical or leadership dimension (or both).
 
 That, too, aligns well with my observations of career paths people followed. Most aimed to increasing their influence over time. Very often their paths are categorized into one-dimensional technical and management "ladders" as if they are entirely distinct, though experience suggests they are not: they appear to have similar beginnings and endings. This requires more than one dimension to accurately represent. Here's a rough illustration of my observations:

@@ -15,3 +15,15 @@ layout: post
 <div>
 {{ content }}
 </div>
+
+<h2>Other posts dealing with similar topics</h2>
+
+<div class="post-tags">
+  {%- if page.tags -%}
+    <p>
+      {% for tag in page.tags %}
+        {% if forloop.first %}{% else %} | {% endif %}<a href="{{site.baseurl}}/tags.html#{{tag | slugize}}" class="tag">{{ tag }}</a>
+      {% endfor %}
+    </p>  
+  {%- endif -%}
+</div>
