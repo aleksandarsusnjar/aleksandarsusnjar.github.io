@@ -43,7 +43,7 @@ Only what remains, minus any context switching overhead and likely with reduced 
 
 How does one's expertise evolve over time? In the initial stages, with young and eager minds that have ample room for learning, our expertise can take root and grow quickly. However, as our expertise expands, the "taxes and maintenance fees" we must pay increase, and the rate of growth slows down. At this point, we face a choice: maintain our current domain of expertise or sacrifice parts of it to make "room" (time) for something new. The following charts illustrate these effects. 
 
-![Figure 1](/assets/influence/expertise-spectrum-1-maintain.png){: style="width: 30%;"} ![Figure 2](/assets/influence/expertise-spectrum-2-move.png){: style="width: 30%;"}![Figure 3](/assets/influence/expertise-spectrum-3-sacrifice.png){: style="width: 30%;"}
+![Figure 1](/assets/influence/expertise-spectrum-1-maintain.png){: style="width: 33%;"} ![Figure 2](/assets/influence/expertise-spectrum-2-move.png){: style="width: 33%;"}![Figure 3](/assets/influence/expertise-spectrum-3-sacrifice.png){: style="width: 33%;"}
 
 - Figure 1 (left) depicts someone who retains all their skills, eventually reaching a limit. 
 - Figure 2 (middle) includes recognition that some expertise becomes obsolete and enables learning other things.
