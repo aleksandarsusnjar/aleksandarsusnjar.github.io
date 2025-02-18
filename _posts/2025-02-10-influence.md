@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tagged
 title: "The Limits of Influence: Expertise, Growth, and Career Evolution"
 tags:
     - "SDLC"
