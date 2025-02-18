@@ -1,17 +1,34 @@
 ---
 layout: page
-title: "Posts by tag"
+title: "Posts by Topic"
 permalink: /tags.html
 ---
 
+<h3>Topics</h3>
+{% assign sorted_tags = site.tags | sort %}
 <div id="tags-list">
-{% for tag in site.tags %}
+  <ul class="post-list post-list-narrow">    
+    {% for tag in sorted_tags %}
+      {% assign tag_name = tag | first %}
+      {% assign tag_name_pretty = tag_name | replace: "_", " " %}
+      {% assign tag_slug = tag_name | slugize %}
+      <li>
+        <a href="#{{ tag_slug }}">{{ tag_name | escape }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+<div id="tags-list">
+{% for tag in sorted_tags %}
   {% assign tag_name = tag | first %}
   {% assign tag_name_pretty = tag_name | replace: "_", " " %}
+  {% assign tag_slug = tag_name | slugize %}
   <div class="tag-list">
-    <div id="#{{ tag_name | slugize }}"></div>
-    <h3 class="post-list-heading line-bottom">#{{ tag_name }}</h3>
-    <a name="{{ tag_name | slugize }}"></a>
+    <div id="#{{ tag_slug }}"></div>
+    <h3 class="post-list-heading line-bottom">{{ tag_name }}</h3>
+    <a name="{{ tag_slug }}"></a>
     <ul class="post-list post-list-narrow">
      {% for post in site.tags[tag_name] %}
      <li>
@@ -21,6 +38,7 @@ permalink: /tags.html
            {{ post.title | escape }}
          </a>
        </b> - <i>{{ post.date | date: date_format }}</i>
+       <p>{{ post.excerpt | xml_escape }}</p>
      </li>
      {% endfor %}
     </ul>
