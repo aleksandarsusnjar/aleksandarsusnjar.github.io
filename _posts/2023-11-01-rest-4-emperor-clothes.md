@@ -122,4 +122,6 @@ Have you explored these alternatives? Are you sure you understand them? My exper
 
 # Next...
 
-Now that we've contemplated what REST APIs are and/or are not, head to [GraphQL: What it is not!](graphql-not) to do the same for GraphQL. You owe it to yourself to have at least one more perspective.
+Now that we've contemplated what REST APIs are and/or are not, head to [GraphQL: What it is not!](graphql-not) to do the same for GraphQL. You owe it to yourself to have at least one more perspective. 
+
+If you're interested in data security be sure to check out my posts on [authorization levels](authorization-thought-scaffold) and [how to recognize inappropriate activity](recognizing-inappropriate) as these can be particularly challenging with REST APIs.

@@ -214,3 +214,5 @@ Am I leading you toward clear, blatant overengineering? It may seem that way, bu
 # Next...
 
 Continue to [part 4](rest-emperor-clothes) for thoughts on motivations and human costs involved in making and maintaining a REST API.
+
+If you're interested in data security be sure to check out my posts on [authorization levels](authorization-thought-scaffold) and [how to recognize inappropriate activity](recognizing-inappropriate) as these can be particularly challenging with REST APIs.

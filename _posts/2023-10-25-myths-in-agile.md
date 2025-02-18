@@ -150,3 +150,5 @@ Time units are real, and they aren't inherently bad - what matters is how we use
 # Next...
 
 Continue to my post about [roadmaps](roadmap) to see what agile yet long-term planning looks like vs how it is often done.
+
+For insights on how (not) to measure team performance, please check out my post [*The Metrics Maze: Uncovering the Dark Side of KPIs*](kpi).
