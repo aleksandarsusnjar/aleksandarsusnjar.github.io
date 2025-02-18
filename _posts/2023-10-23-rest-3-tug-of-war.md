@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: tagged
 title: "REST API (3): Tug of War"
 tags:
     - API
     - REST
-    - RESTful
     - HATEOAS
     - Mythbusting 
     - "Software Development"

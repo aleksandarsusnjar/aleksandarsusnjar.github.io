@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: tagged
 title: "REST API (4): Emperor's [New?] Clothes"
 tags:
     - API
     - REST
-    - RESTful
     - HATEOAS
     - Mythbusting 
     - "Software Development"

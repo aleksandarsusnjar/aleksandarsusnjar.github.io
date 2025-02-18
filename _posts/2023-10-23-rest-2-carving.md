@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: tagged
 title: "REST API (2): Carving the state(s)?"
 tags:
     - API
     - REST
-    - RESTful
     - HATEOAS
     - Mythbusting 
     - "Software Development"

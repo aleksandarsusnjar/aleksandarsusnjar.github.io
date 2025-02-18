@@ -1,12 +1,17 @@
 ---
-#layout: post
-layout: default
+layout: post
 ---
 
-{%- if page.tags -%}
-    {% for tag in page.tags %}
-        {% if forloop.first %}{% else %} | {% endif %}<a href="{{site.baseurl}}/tags.html#{{tag | slugize}}">{{ tag }}</a>
-    {% endfor %}
-{%- endif -%}
+<div class="post-tags">
+  {%- if page.tags -%}
+    <p>
+      {% for tag in page.tags %}
+        {% if forloop.first %}{% else %} | {% endif %}<a href="{{site.baseurl}}/tags.html#{{tag | slugize}}" class="tag">{{ tag }}</a>
+      {% endfor %}
+    </p>  
+  {%- endif -%}
+</div>
 
+<div>
 {{ content }}
+</div>

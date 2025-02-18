@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tagged
 title: "Agile Mythodology"
 tags:
     - SDLC

@@ -12,9 +12,7 @@ permalink: /tags.html
       {% assign tag_name = tag | first %}
       {% assign tag_name_pretty = tag_name | replace: "_", " " %}
       {% assign tag_slug = tag_name | slugize %}
-      <li>
-        <a href="#{{ tag_slug }}">{{ tag_name | escape }}</a>
-      </li>
+      <a href="#{{ tag_slug }}">{{ tag_name | escape }}</a><br/>
     {% endfor %}
   </ul>
 </div>
@@ -27,8 +25,8 @@ permalink: /tags.html
   {% assign tag_slug = tag_name | slugize %}
   <div class="tag-list">
     <div id="#{{ tag_slug }}"></div>
-    <h3 class="post-list-heading line-bottom">{{ tag_name }}</h3>
     <a name="{{ tag_slug }}"></a>
+    <h3 class="post-list-heading line-bottom">{{ tag_name }}</h3>    
     <ul class="post-list post-list-narrow">
      {% for post in site.tags[tag_name] %}
      <li>

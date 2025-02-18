@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tagged
 title: "GraphQL: What it is not!"
 tags:
     - API

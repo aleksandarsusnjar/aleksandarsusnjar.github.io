@@ -1,9 +1,8 @@
 ---
-layout: post
+layout: tagged
 title: "Code coverage is an indicator, not a goal"
 tags:
     - "Software Development"
-    - "Software Architecture"
     - "Quality"
     - "Testing"
 categories:

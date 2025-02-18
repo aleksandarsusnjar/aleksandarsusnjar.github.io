@@ -1,11 +1,10 @@
 ---
-layout: post
+layout: tagged
 title: "Authorization: A Thought Scaffold"
 tags:
     - API
     - API Security
     - REST
-    - RESTful
     - Security
     - Authorization
     - "Software Development"

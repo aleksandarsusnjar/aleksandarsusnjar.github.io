@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tagged
 title: "Divide & Conquer in Software Development"
 tags:
     - SDLC

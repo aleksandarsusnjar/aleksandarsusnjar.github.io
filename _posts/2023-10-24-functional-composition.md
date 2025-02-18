@@ -1,11 +1,10 @@
 ---
-layout: post
+layout: tagged
 title: "Collaborating Services by Functional Composition"
 tags:
     - SDLC
     - API
     - REST
-    - RESTful
     - GraphQL
     - Mythbusting 
     - "Software Development"

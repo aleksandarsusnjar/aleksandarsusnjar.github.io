@@ -1,11 +1,10 @@
 ---
-layout: post
+layout: tagged
 title: "Security: Recognizing the Inappropriate"
 tags:
     - API
     - API Security
     - REST
-    - RESTful
     - GraphQL
     - Security
     - Authorization
