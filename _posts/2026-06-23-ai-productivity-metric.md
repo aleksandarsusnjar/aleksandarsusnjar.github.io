@@ -19,6 +19,7 @@ excerpt: >
 
 > **Series reading path:** 1 of 5: Start here. [Next: The Cleanup Tax: AI Did Not Remove Review. It Moved the Bottleneck.](cleanup-tax)
 
+![Map](/assets/ai-productivity-metric/illustration.jpg){: style="float: right; width: 50%; margin-left: 1em;"}
 There is a question being asked in boardrooms, engineering all-hands, budget reviews, vendor demos, hallway conversations, and probably a few slightly awkward one-on-ones:
 
 **Is AI making software developers more productive?**

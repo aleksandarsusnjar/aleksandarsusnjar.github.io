@@ -19,6 +19,7 @@ excerpt: >
 
 > **Series reading path:** 2 of 5: [Previous: AI Productivity: The Metric Was Already Broken](ai-productivity-metric). [Next: The Genie Problem: AI Treats the Unsaid as Negotiable](genie-problem)
 
+![Map](/assets/cleanup-tax/illustration.jpg){: style="float: right; width: 50%; margin-left: 1em;"}
 AI can produce code very quickly.
 
 That sentence is both true and dangerously incomplete, which is an impressive accomplishment for seven words.

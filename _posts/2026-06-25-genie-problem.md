@@ -18,6 +18,7 @@ excerpt: >
 
 > **Series reading path:** 3 of 5: [Previous: The Cleanup Tax: AI Did Not Remove Review. It Moved the Bottleneck.](cleanup-tax). [Next: Documentation Was the Problem. Now It May Be the Product.](documentation-product)
 
+![Map](/assets/genie-problem/illustration.jpg){: style="float: right; width: 50%; margin-left: 1em;"}
 There is an old story shape in which someone finds a genie, makes a wish, and then discovers that words are dangerous instruments. The genie technically obeys. That is the problem.
 
 AI coding assistants are not genies. They do not live in lamps, they usually have worse taste in method names, and they are less likely to appear in suspiciously ornate smoke.

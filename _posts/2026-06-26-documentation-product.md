@@ -18,6 +18,7 @@ excerpt: >
 
 > **Series reading path:** 4 of 5: [Previous: The Genie Problem: AI Treats the Unsaid as Negotiable](genie-problem). [Next: Supervisory Engineering: The Work AI Creates While Removing Work](supervisory-engineering)
 
+![Map](/assets/documentation-product/illustration.jpg){: style="float: right; width: 50%; margin-left: 1em;"}
 I have had a love-hate relationship with documentation.
 
 That is not quite fair. I loved having good documentation. Everyone does, in the same way everyone loves finding an umbrella exactly where it should be when the rain starts. The trouble is that very few people love writing it, fewer love maintaining it, and almost nobody loves discovering that the documentation they trusted was wrong in precisely the place where trust mattered.

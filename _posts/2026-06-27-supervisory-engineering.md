@@ -18,6 +18,7 @@ excerpt: >
 
 > **Series reading path:** 5 of 5: [Previous: Documentation Was the Problem. Now It May Be the Product.](documentation-product). End of series
 
+![Map](/assets/supervisory-engineering/illustration.jpg){: style="float: right; width: 50%; margin-left: 1em;"}
 AI is supposed to remove work.
 
 That is the promise, or at least the slide-shaped version of it. The model writes the code, the developer becomes faster, the team ships more, and somewhere in the distance a dashboard turns a confident shade of green.
